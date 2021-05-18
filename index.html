@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豆瓣</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="box">
+        <!-- 导航区开始 -->
+        <nav id="nav" class="clearfix">
+            <div class="logo">
+                <a href="#">豆瓣</a>
+            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="书籍、电影、音乐、小组、小站、成员">
+                    <button>
+                        <i class="iconfont icon-sousuo5"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#" class="diyige"></a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">音乐</a></li>
+                    <li><a href="#">小组</a></li>
+                    <li><a href="#">同城</a></li>
+                    <li><a href="#">FM</a></li>
+                    <li><a href="#">时间</a></li>
+                    <li><a href="#">豆品</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 导航区结束 -->
+
+        <!-- 登录区开始 -->
+        <div id="login-area" class="clearfix">
+            <div class="container">
+                <div class="login clearfix">
+                    <!-- 右上方二维码开始 -->
+                    <div class="scan_qr_code" id="zhu5">
+                        <a href="#" id="qiehuan3"><img src="images/saoma.png"></a>
+                        <div>扫码登录</div>
+                    </div>
+                    <div class="scan_qr_code-hidden hidden" id="zhu">
+                        <div class="scan_qr_code2">
+                            <a href="#" id="qiehuan4"><img src="images/xinxi.png"></a>
+                            <div class="hov">短信登录/注册</div>
+                        </div>
+                        <div>二维码登录</div>
+                        <div>
+                            <img src="images/qrlogin_code=douban-qrlogin_o6R1AEFxEBDOfA.png">
+                            <p>请打开豆瓣客户端扫一扫</p>
+                        </div>
+                    </div>
+                    <!-- 右上方二维码结束 -->
+                    <!-- 短信登录/注册开始 -->
+                    <div class="sms-registration clearfix" id="zhu1">
+                        <!-- 选择国际区号开始 -->
+                        <div class="numerical_selector hidden" id="zhu3">
+                            <div>
+                                <p>选择国际区号</p>
+                                <i class="iconfont icon-x" id="x"></i>
+                            </div>
+                            <div class="container-region">
+                                <ul>
+                                    <li><span class="region left_active">中国大陆</span><span
+                                            class="num right_active">+86</span></li>
+                                    <li><span class="region">中国香港</span><span class="num">+852</span></li>
+                                    <li><span class="region">澳门地区</span><span class="num">+853</span></li>
+                                    <li><span class="region">中国台湾</span><span class="num">+886</span></li>
+                                    <li><span class="region">日本</span><span class="num">+81</span></li>
+                                    <li><span class="region">韩国</span><span class="num">+82</span></li>
+                                    <li><span class="region">新加坡</span><span class="num">+65</span></li>
+                                    <li><span class="region">泰国</span><span class="num">+66</span></li>
+                                    <li><span class="region">马来西亚</span><span class="num">+60</span></li>
+                                    <li><span class="region">美国</span><span class="num">+1</span></li>
+                                    <li><span class="region">加拿大</span><span class="num">+1</span></li>
+                                    <li><span class="region">澳大利亚</span><span class="num">+61</span></li>
+                                    <li><span class="region">英国</span><span class="num">+44</span></li>
+                                    <li><span class="region">德国</span><span class="num">+49</span></li>
+                                    <li><span class="region">法国</span><span class="num">+33</span></li>
+                                    <li><span class="region">俄罗斯</span><span class="num">+7</span></li>
+                                    <li><span class="region">印度</span><span class="num">+91</span></li>
+                                    <li><span class="region">新西兰</span><span class="num">+64</span></li>
+                                    <li><span class="region">意大利</span><span class="num">+39</span></li>
+                                    <li><span class="region">荷兰</span><span class="num">+31</span></li>
+                                    <li><span class="region">西班牙</span><span class="num">+34</span></li>
+                                    <li><span class="region">瑞典</span><span class="num">+46</span></li>
+                                    <li><span class="region">奥地利</span><span class="num">+43</span></li>
+                                    <li><span class="region">瑞士</span><span class="num">+41</span></li>
+                                    <li><span class="region">立陶宛</span><span class="num">+370</span></li>
+                                    <li><span class="region">菲律宾</span><span class="num">+63</span></li>
+                                    <li><span class="region">印度尼西亚</span><span class="num">+62</span></li>
+                                    <li><span class="region">越南</span><span class="num">+84</span></li>
+                                    <li><span class="region">阿联酋</span><span class="num">+971</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!-- 选择国际区号结束 -->
+                        <ul class="Login-switch">
+                            <li class="active">短信登录／注册</li>
+                            <li id="qiehuan1">密码登录</li>
+                        </ul>
+                        <p class="protocol">请仔细阅读 <a href="#">豆瓣使用协议、隐私政策</a></p>
+                        <div class="form">
+                            <form action="#">
+                                <div class="erea_selection">
+                                    <div class="choice" id="baliu">
+                                        +86
+                                    </div>
+                                    <input id="txt" class="phone_number" type="text" placeholder="手机号">
+                                </div>
+                                <div class="verification_code">
+                                    <input id="txt2" type="text" placeholder="验证码">
+                                    <a href="#">获取验证码</a>
+                                </div>
+                                <button id="btn1" class="btn" disabled>登录豆瓣</button>
+                                <div class="automatic_login">
+                                    <input type="checkbox" id="link">
+                                    <label for="link">下次自动登录</label>
+                                    <a href="#">收不到验证码</a>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- 第三方登录开始 -->
+                        <div class="Third-party_login clearfix" id="zhu4">
+                            <div>第三方登录:</div>
+                            <div class="Third-party_login-img">
+                                <i class="iconfont icon-weixin-copy"></i>
+                                <i class="iconfont icon-logo-weibo-copy"></i>
+                            </div>
+                        </div>
+                        <!-- 第三方登录结束 -->
+                    </div>
+                    <!-- 短信登录/注册结束 -->
+
+                    <!-- 密码登录开始 -->
+                    <div class="password-login clearfix hidden" id="zhu2">
+                        <div class="sms-registration clearfix">
+                            <ul class="Login-switch">
+                                <li id="qiehuan2">短信登录／注册</li>
+                                <li class="active">密码登录</li>
+                            </ul>
+                            <p class="protocol"><a href="#">找回密码</a></p>
+                            <div class="form">
+                                <form action="#">
+                                    <div class="erea_selection">
+                                        <input id="txt3" class="phone_number" type="text" placeholder="手机号/邮箱">
+                                    </div>
+                                    <div class="verification_code">
+                                        <input id="txt4" type="text" placeholder="密码">
+                                    </div>
+                                    <button id="btn2" class="btn" disabled>登录豆瓣</button>
+                                    <div class="automatic_login">
+                                        <input type="checkbox" id="link">
+                                        <label for="link">下次自动登录</label>
+                                        <a href="#">海外手机登录</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- 第三方登录开始 -->
+                            <div class="Third-party_login clearfix">
+                                <div>第三方登录:</div>
+                                <div class="Third-party_login-img">
+                                    <i class="iconfont icon-weixin-copy"></i>
+                                    <i class="iconfont icon-logo-weibo-copy"></i>
+                                </div>
+                            </div>
+                            <!-- 第三方登录结束 -->
+                        </div>
+                    </div>
+                    <!-- 密码登录结束 -->
+                </div>
+                <div class="download">
+                    <p>豆瓣&nbsp;6.0</p>
+                    <button>下载豆瓣App</button>
+                    <div class="qr_code">
+                        <div class="qr_code-conceal">
+                            <img src="images/doubanapp_qrcode.png">
+                            <p>iOS / Android 扫码直接下载</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 登录区结束 -->
+
+        <!-- 热点内容开始 -->
+        <div id="hot_content" class="clearfix">
+            <div class="container clearfix">
+                <p class="hot_content-headline">热点内容 ······ ( <a href="">更多</a> )</p>
+                <div class="hot_content-img clearfix">
+                    <div class="pic mar-b">
+                        <img src="images/p1.webp">
+                        <p><a href="#">贝聿铭建筑作品集</a><span>389张照片</span></p>
+                    </div>
+                    <div class="pic mar-b mar-l">
+                        <img src="images/p2.webp">
+                        <p><a href="#">必须是红红的 必须是圆圆的</a><span>54张照片</span></p>
+                    </div>
+                    <div class="pic">
+                        <img src="images/p3.webp">
+                        <p><a href="#">711泡泡</a><span>50张照片</span></p>
+                    </div>
+                    <div class="pic mar-l">
+                        <img src="images/p4.webp">
+                        <p><a href="#">折紙系列-氣球皮卡丘</a><span>15张照片</span></p>
+                    </div>
+                </div>
+                <div class="journalism clearfix">
+                    <p><a href="#">天还去摘菜么</a></p>
+                    <p>This is 小景的日记</p>
+                    <p>周六我姐带着我妈还有孩子回来，午后我这边忙完也赶回家。这几天天气特别热，我们...</p>
+                    <p><a href="#">中山路往事</a></p>
+                    <p><a href="#">我对桃的感情</a></p>
+                    <p><a href="#">情怀不似旧家时</a></p>
+                    <p><a href="#">那些做便当的日子</a></p>
+                    <p><a href="#">海清们的真正困境，在于中年人的故事被集体清空</a></p>
+                    <p><a href="#">去了趟朝鲜</a></p>
+                    <p><a href="#">西北农村，装在院子里的情怀</a></p>
+                    <p><a href="#">玛琳湖泛舟</a></p>
+                    <p><a href="#">记住七个词，涂鸦随便画人（给小白的绘画技法继续）</a></p>
+                </div>
+            </div>
+            <div class="hot_topic">
+                <p class="hot_content-headline">热门话题 ······ ( <a href="">去话题广场</a> )</p>
+                <div class="paragraphing">
+                    <p><a href="#">视频·城市里的秘密商店</a></p>
+                    <span>153562人浏览</span>
+                </div>
+                <div class="paragraphing">
+                    <p><a href="#">充实清晨1小时计划</a></p>
+                    <span>995100人浏览</span>
+                </div>
+                <div class="paragraphing">
+                    <p><a href="#">日剧教给我的恋爱观</a></p>
+                    <span>2195641人浏览</span>
+                </div>
+                <div class="paragraphing">
+                    <p><a href="#">那些有江水穿过的城市</a></p>
+                    <span>新话题 · 17158人浏览</span>
+                </div>
+                <div class="paragraphing">
+                    <p><a href="#">我在野外捡到的化石</a></p>
+                    <span>654人浏览</span>
+                </div>
+            </div>
+        </div>
+        <!-- 热点内容结束 -->
+
+        <!-- 豆瓣时间开始 -->
+        <div id="douban-time" class="clearfix">
+            <div class="centered">
+                <p class="title"><a href="#">豆瓣时间</a></p>
+                <div class="container">
+                    <p class="hot_content-headline">热点内容 ······ ( <a href="">更多</a> )</p>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/511ccf86-b8fc-11e9-b188-0242ac110008.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">世界记忆大师教你快速提升记忆力</a>
+                        </p>
+                        <p>视频专栏</p>
+                        <p class="icon-img"><img src="images/sheyingji.png"></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/2.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">黑白之间：二十八堂书法练习课</a>
+                        </p>
+                        <p>视频专栏</p>
+                        <p class="icon-img"><img src="images/sheyingji.png"></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/3.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">马伯庸的冷门书单</a>
+                        </p>
+                        <p>音频专栏</p>
+                        <p class="icon-img"><img src="images/er_ji.png"></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/4.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">听！解说式音乐会——古典音乐聆听指南</a>
+                        </p>
+                        <p>视频专栏</p>
+                        <p class="icon-img"><img src="images/sheyingji.png"></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/5.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">从格里菲斯到诺兰——影迷都在看的电影结构大师课</a>
+                        </p>
+                        <p>视频专栏</p>
+                        <p class="icon-img"><img src="images/sheyingji.png"></p>
+                    </div>
+
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/6.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">打开电影声音的魔盒——好莱坞声音设计大师课</a>
+                        </p>
+                        <p>视频专栏</p>
+                        <p class="icon-img"><img src="images/sheyingji.png"></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/7.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">一剧之本——好莱坞编剧教父大师课</a>
+                        </p>
+                        <p>视频专栏</p>
+                        <p class="icon-img"><img src="images/sheyingji.png"></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/8.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">老叶说电影——90分钟看懂中国电影产业</a>
+                        </p>
+                        <p>视频专栏</p>
+                        <p class="icon-img"><img src="images/sheyingji.png"></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/9.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">好莱坞特效大师课——从概念艺术到3D建模</a>
+                        </p>
+                        <p>视频专栏</p>
+                        <p class="icon-img"><img src="images/sheyingji.png"></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/10.jpg"></a></p>
+                        <p>
+                            <a href="#" class="txt">如何成为学习高手——终身受用的思维方法</a>
+                        </p>
+                        <p>音频专栏</p>
+                        <p class="icon-img"><img src="images/er_ji.png"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 豆瓣时间结束 -->
+
+        <!-- 视频开始 -->
+        <div id="video" class="clearfix">
+            <div class="centered">
+                <p class="title"><a href="#">视频</a></p>
+                <div class="container-top clarendon">
+                    <p><a href="#">瓣嘴 ······</a></p>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/file-1536139554.jpg"></a></p>
+                        <p><a href="#">马伊琍衣品遭围攻吐槽，清奇脑回路解读流行语</a></p>
+                        <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/2.jpeg"></a></p>
+                        <p><a href="#">姚晨忘带偶像包袱，展示十级搞笑功力</a></p>
+                        <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                    </div>
+                    <div class="paragraphing clearfix">
+                        <p><a href="#"><img src="images/11.jpg"></a></p>
+                        <p><a href="#">陈坤公开三大bug，原来你是这样的厂花</a></p>
+                        <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                    </div>
+                    <p class="mar-x"><a href="#">观影会客厅 ······</a></p>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/12.jpg"></a></p>
+                        <p><a href="#">焦雄屏：把电影当做一种信仰</a></p>
+                        <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/13.jpg"></a></p>
+                        <p><a href="#">汤姆·克鲁斯：对我来说，拍电影就是度假</a></p>
+                        <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/14.jpg"></a></p>
+                        <p><a href="#">蔡明亮：创作有时候是一种命运的安排</a></p>
+                        <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 视频结束 -->
+
+        <!-- 电影开始 -->
+        <div id="movie" class="clearfix">
+            <div class="container clearfix">
+                <aside class="movie-left">
+                    <p><a href="#">电影</a></p>
+                    <p><a href="#">影讯&购票</a></p>
+                    <p><a href="#">选电影</a><i class="iconfont icon-new"></i></p>
+                    <p><a href="#">电视剧</a></p>
+                    <p><a href="#">排行榜</a></p>
+                    <p><a href="#">分类</a></p>
+                    <p><a href="#">影评</a></p>
+                    <p><a href="#">预告片</a></p>
+                    <p><a href="#">问答</a></p>
+                </aside>
+                <div class="movie-main clearfix">
+                    <p class="title">正在热映 · · · · · · ( <a href="#">更多</a> )</p>
+                    <ul>
+                        <li>
+                            <p><a href="#"><img src="images/p2565751382.webp"></a></p>
+                            <p><a href="#">送我上青云</a></p>
+                            <p><i></i><span>7.3</span></p>
+                            <button>选座购票</button>
+                        </li>
+                        <li>
+                            <p><a href="#"><img src="images/5.webp"></a></p>
+                            <p><a href="#">骡子</a></p>
+                            <p><i></i><span>7.9</span></p>
+                            <button>选座购票</button>
+                        </li>
+                        <li>
+                            <p><a href="#"><img src="images/6.webp"></a></p>
+                            <p><a href="#">速度与激情：特</a></p>
+                            <p><i></i><span>6.3</span></p>
+                            <button>选座购票</button>
+                        </li>
+                        <li>
+                            <p><a href="#"><img src="images/7.webp"></a></p>
+                            <p><a href="#">哪吒之魔童降世</a></p>
+                            <p><i></i><span>8.6</span></p>
+                            <button>选座购票</button>
+                        </li>
+
+                        <li>
+                            <p><a href="#"><img src="images/8.webp"></a></p>
+                            <p><a href="#">沉默的证人</a></p>
+                            <p><i></i><span>5.7</span></p>
+                            <button>选座购票</button>
+                        </li>
+                        <li>
+                            <p><a href="#"><img src="images/9.webp"></a></p>
+                            <p><a href="#">昆虫总动员2</a></p>
+                            <p><i></i><span>8.4</span></p>
+                            <button>选座购票</button>
+                        </li>
+                        <li>
+                            <p><a href="#"><img src="images/10.webp"></a></p>
+                            <p><a href="#">保持沉默</a></p>
+                            <p><i></i><span>6.2</span></p>
+                            <button>选座购票</button>
+                        </li>
+                        <li>
+                            <p><a href="#"><img src="images/11.webp"></a></p>
+                            <p><a href="#">烈火英雄</a></p>
+                            <p><i></i><span>6.6</span></p>
+                            <button>选座购票</button>
+                        </li>
+                    </ul>
+                </div>
+                <aside class="movie-right">
+                    <p class="title">影片分类 · · · · · · ( <a href="#">更多</a> )</p>
+                    <ul class="classify clearfix">
+                        <li><a href="#">爱情</a></li>
+                        <li><a href="#">喜剧</a></li>
+                        <li><a href="#">剧情</a></li>
+                        <li><a href="#">动画</a></li>
+                        <li><a href="#">科幻</a></li>
+                        <li><a href="#">动作</a></li>
+                        <li><a href="#">经典</a></li>
+                        <li><a href="#">悬疑</a></li>
+                        <li><a href="#">犯罪</a></li>
+                        <li><a href="#">青春</a></li>
+                        <li><a href="#">文艺</a></li>
+                        <li><a href="#">搞笑</a></li>
+                        <li><a href="#">惊悚</a></li>
+                        <li><a href="#">励志</a></li>
+                        <li><a href="#">纪录片</a></li>
+                        <li><a href="#">黑色幽默</a></li>
+                        <li><a href="#">战争</a></li>
+                        <li><a href="#">恐怖</a></li>
+                        <li><a href="#">美国</a></li>
+                        <li><a href="#">日本</a></li>
+                        <li><a href="#">香港</a></li>
+                        <li><a href="#">中国</a></li>
+                        <li><a href="#">英国</a></li>
+                        <li><a href="#">韩国</a></li>
+                        <li><a href="#">中国大陆</a></li>
+                        <li><a href="#">法国</a></li>
+                        <li><a href="#">台湾</a></li>
+                        <li><a href="#">印度</a></li>
+                    </ul>
+                    <p class="title2">近期热门 · · · · · · ( <a href="#">更多</a> )</p>
+                    <ul class="ranking clearfix">
+                        <li><span>1.</span><a href="#">寄生虫</a></li>
+                        <li><span>2.</span><a href="#">恶人转</a></li>
+                        <li><span>3.</span><a href="#">追龙Ⅱ</a></li>
+                        <li><span>4.</span><a href="#">速度与激情：特别行动</a></li>
+                        <li><span>5.</span><a href="#">速备战</a></li>
+                        <li><span>6.</span><a href="#">妈阁是座城</a></li>
+                        <li><span>7.</span><a href="#">好莱坞往事</a></li>
+                        <li><span>8.</span><a href="#">痛苦与荣耀</a></li>
+                        <li><span>9.</span><a href="#">沦落人</a></li>
+                        <li><span>10.</span><a href="#">买酒店</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <!-- 电影结束 -->
+
+        <!-- 小组开始 -->
+        <div id="group" class="clearfix">
+            <div class="container clearfix">
+                <aside class="group-left">
+                    <p><a href="#">小组</a></p>
+                    <p><a href="#">精选</a></p>
+                    <p><a href="#">文化</a></p>
+                    <p><a href="#">行摄</a></p>
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">时尚</a></p>
+                    <p><a href="#">生活</a></p>
+                    <p><a href="#">科技</a></p>
+                </aside>
+                <div class="group-main clearfix">
+                    <p class="title">正在热映 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a1.webp"></a>
+                        </div>
+                        <div class="character">
+                            <p>帮帮组™加入这个组就有人帮你了！</p>
+                            <p>16548 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a2.webp"></a>
+                        </div>
+                        <div class="character">
+                            <p>我爱三毛</p>
+                            <p>46549 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a3.webp"></a>
+                        </div>
+                        <div class="character">
+                            <p>沙发客</p>
+                            <p>22965 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a4.webp"></a>
+                        </div>
+                        <div class="character">
+                            <p>刘慈欣</p>
+                            <p>29593 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a5.webp"></a>
+                        </div>
+                        <div class="character">
+                            <p>双西版纳</p>
+                            <p>11349 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a6.webp"></a>
+                        </div>
+                        <div class="character">
+                            <p>记事本圆梦小组</p>
+                            <p>115828 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a7.jpg"></a>
+                        </div>
+                        <div class="character">
+                            <p>搭讪学</p>
+                            <p>94208 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a8.webp"></a>
+                        </div>
+                        <div class="character">
+                            <p>这辈子一定要做几件疯狂的事</p>
+                            <p>93430 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a9.jpg"></a>
+                        </div>
+                        <div class="character">
+                            <p>自己给自己剪头发</p>
+                            <p>35052 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a10.jpg"></a>
+                        </div>
+                        <div class="character">
+                            <p>我们就是要做衣服给自己穿</p>
+                            <p>3747 个成员</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <div class="group-img">
+                            <a href="#"><img src="images/a11.webp"></a>
+                        </div>
+                        <div class="character">
+                            <p>对象太他妈难找了党-单身凸^-^凸</p>
+                            <p>16238 个成员</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="group-right">
+                    <p class="title">影片分类 · · · · · ·</p>
+                    <div class="paragraphing">
+                        <p><a href="#">兴趣»</a></p>
+                        <p>
+                            <a href="#">旅游</a>
+                            <a href="#">摄影</a>
+                            <a href="#">影视</a>
+                            <a href="#">音乐</a>
+                            <a href="#">文学</a>
+                            <a href="#">游戏</a>
+                            <a href="#">动漫</a>
+                            <a href="#">运动</a>
+                            <a href="#">戏曲</a>
+                            <a href="#">桌游</a>
+                            <a href="#">怪癖</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">生活»</a></p>
+                        <p>
+                            <a href="#">健康</a>
+                            <a href="#">美食</a>
+                            <a href="#">宠物</a>
+                            <a href="#">美容</a>
+                            <a href="#">化妆</a>
+                            <a href="#">护肤</a>
+                            <a href="#">服饰</a>
+                            <a href="#">公益</a>
+                            <a href="#">家庭</a>
+                            <a href="#">育儿</a>
+                            <a href="#">汽车</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">购物»</a></p>
+                        <p>
+                            <a href="#">淘宝</a>
+                            <a href="#">二手</a>
+                            <a href="#">团购</a>
+                            <a href="#">数码</a>
+                            <a href="#">品牌</a>
+                            <a href="#">文具</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">社会»</a></p>
+                        <p>
+                            <a href="#">求职</a>
+                            <a href="#">租房</a>
+                            <a href="#">励志</a>
+                            <a href="#">留学</a>
+                            <a href="#">出国</a>
+                            <a href="#">理财</a>
+                            <a href="#">传媒</a>
+                            <a href="#">创业</a>
+                            <a href="#">考试</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">艺术»</a></p>
+                        <p>
+                            <a href="#">设计</a>
+                            <a href="#">手工</a>
+                            <a href="#">展览</a>
+                            <a href="#">曲艺</a>
+                            <a href="#">舞蹈</a>
+                            <a href="#">雕塑</a>
+                            <a href="#">纹身</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">学术»</a></p>
+                        <p>
+                            <a href="#">人文</a>
+                            <a href="#">社科</a>
+                            <a href="#">自然</a>
+                            <a href="#">建筑</a>
+                            <a href="#">国学</a>
+                            <a href="#">语言</a>
+                            <a href="#">宗教</a>
+                            <a href="#">哲学</a>
+                            <a href="#">软件</a>
+                            <a href="#">硬件</a>
+                            <a href="#">互联网</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">情感»</a></p>
+                        <p>
+                            <a href="#">恋爱</a>
+                            <a href="#">心情</a>
+                            <a href="#">心理学</a>
+                            <a href="#">星座</a>
+                            <a href="#">塔罗</a>
+                            <a href="#">LES</a>
+                            <a href="#">GAY</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">闲聊»</a></p>
+                        <p>
+                            <a href="#">吐槽</a>
+                            <a href="#">笑话</a>
+                            <a href="#">直播</a>
+                            <a href="#">八卦</a>
+                            <a href="#">发泄</a>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!-- 小组结束 -->
+
+        <!-- 读书开始 -->
+        <div id="reading" class="clearfix">
+            <div class="container clearfix">
+                <aside class="reading-left">
+                    <p><a href="#">读书</a></p>
+                    <p><a href="#">分类浏览</a></p>
+                    <p><a href="#">阅读</a><i class="iconfont icon-new"></i></p>
+                    <p><a href="#">作者</a></p>
+                    <p><a href="#">书评</a></p>
+                    <p><a href="#">购书单</a></p>
+                    <p><a href="#"></a></p>
+                    <p><a href="#">豆瓣阅读</a></p>
+                </aside>
+                <div class="reading-main clearfix">
+                    <p class="title">新书速递 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/s1.jpg"></a></p>
+                        <p><a href="#">彩虹尽头</a></p>
+                        <p>〔美〕弗诺·文</p>
+                        <button>免费阅读</button>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/s2.jpg"></a></p>
+                        <p><a href="#">荒潮</a></p>
+                        <p>陈楸帆</p>
+                        <button>免费阅读</button>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/s3.jpg"></a></p>
+                        <p><a href="#">冯内古特：最后</a></p>
+                        <p>〔美〕库尔特·</p>
+                        <button>免费阅读</button>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/s4.jpg"></a></p>
+                        <p><a href="#">焦虑星球笔记</a></p>
+                        <p>〔英〕马特·海</p>
+                        <button>免费阅读</button>
+                    </div>
+                    <p class="title">原创数字作品 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/s5.jpg"></a></p>
+                        <p><a href="#">女神蒙上眼</a></p>
+                        <p>免费</p>
+                        <button>免费阅读</button>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/s6.jpg"></a></p>
+                        <p><a href="#">墨者：谜海沉舟</a></p>
+                        <p>免费</p>
+                        <button>免费阅读</button>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/s7.jpg"></a></p>
+                        <p><a href="#">静湖谜案</a></p>
+                        <p>免费</p>
+                        <button>免费阅读</button>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/s8.jpg"></a></p>
+                        <p><a href="#">城外</a></p>
+                        <p>免费</p>
+                        <button>免费阅读</button>
+                    </div>
+                </div>
+                <aside class="reading-right">
+                    <p class="title">热门标签 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing">
+                        <p>[文学]</p>
+                        <p><a href="#">小说</a></p>
+                        <p><a href="#">随笔</a></p>
+                        <p><a href="#">日本文学</a></p>
+                        <p><a href="#">散文</a></p>
+                        <p><a href="#">诗歌</a></p>
+                        <p><a href="#">童话</a></p>
+                        <p><a href="#">名著</a></p>
+                        <p><a href="#">港台</a></p>
+                        <p><a href="#">更多</a></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p>[流行]</p>
+                        <p><a href="#">漫画</a></p>
+                        <p><a href="#">推理</a></p>
+                        <p><a href="#">绘本</a></p>
+                        <p><a href="#">青春</a></p>
+                        <p><a href="#">科幻</a></p>
+                        <p><a href="#">言情</a></p>
+                        <p><a href="#">奇幻</a></p>
+                        <p><a href="#">武侠</a></p>
+                        <p><a href="#">更多</a></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p>[文化]</p>
+                        <p><a href="#">历史</a></p>
+                        <p><a href="#">哲学</a></p>
+                        <p><a href="#">传记</a></p>
+                        <p><a href="#">设计</a></p>
+                        <p><a href="#">建筑</a></p>
+                        <p><a href="#">电影</a></p>
+                        <p><a href="#">回忆录</a></p>
+                        <p><a href="#">音乐</a></p>
+                        <p><a href="#">更多</a></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p>[生活]</p>
+                        <p><a href="#">旅行</a></p>
+                        <p><a href="#">励志</a></p>
+                        <p><a href="#">教育</a></p>
+                        <p><a href="#">职场</a></p>
+                        <p><a href="#">美食</a></p>
+                        <p><a href="#">灵修</a></p>
+                        <p><a href="#">健康</a></p>
+                        <p><a href="#">家居</a></p>
+                        <p><a href="#">更多</a></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p>[经管]</p>
+                        <p><a href="#">经济学</a></p>
+                        <p><a href="#">管理</a></p>
+                        <p><a href="#">商业</a></p>
+                        <p><a href="#">金融</a></p>
+                        <p><a href="#">营销</a></p>
+                        <p><a href="#">理财</a></p>
+                        <p><a href="#">股票</a></p>
+                        <p><a href="#">企业史</a></p>
+                        <p><a href="#">更多</a></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p>[科技]</p>
+                        <p><a href="#">科普</a></p>
+                        <p><a href="#">互联网</a></p>
+                        <p><a href="#">编程</a></p>
+                        <p><a href="#">交互设计</a></p>
+                        <p><a href="#">算法</a></p>
+                        <p><a href="#">通信</a></p>
+                        <p><a href="#">神经网络</a></p>
+                        <p><a href="#">更多</a></p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!-- 读书结束 -->
+
+        <!-- 音乐开始 -->
+        <div id="music" class="clearfix">
+            <div class="container clearfix">
+                <aside class="music-left">
+                    <p><a href="#">音乐</a></p>
+                    <p><a href="#">音乐人</a></p>
+                    <p><a href="#">潮潮豆瓣音乐周</a></p>
+                    <p><a href="#">金羊毛计划</a></p>
+                    <p><a href="#">专题</a></p>
+                    <p><a href="#">排行榜</a></p>
+                    <p><a href="#">分类浏览</a></p>
+                    <p><a href="#">乐评</a></p>
+                    <p><a href="#">豆瓣FM</a></p>
+                    <p><a href="#">歌单</a></p>
+                    <p><a href="#">阿比鹿音乐奖</a></p>
+                    <p><a href="#"></a></p>
+                    <p><a href="#">豆瓣FM</a></p>
+                    <p><a href="#"></a></p>
+                    <p><a href="#">豆瓣音乐人</a></p>
+                </aside>
+                <div class="music-main clearfix">
+                    <p class="title">豆瓣新碟榜 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/q1.jpg"></a></p>
+                        <p>1.<a href="#">YOUNG</a></p>
+                        <p><a href="#">蔡徐坤</a></p>
+                        <p><i></i><span>5.7</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/q2.jpg"></a></p>
+                        <p>2.<a href="#">EVEN WONG</a></p>
+                        <p><a href="#">王晨艺</a></p>
+                        <p><i></i><span>5.7</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/q3.jpg"></a></p>
+                        <p>3.<a href="#">哇</a></p>
+                        <p><a href="#">李宇春 Chris Lee</a></p>
+                        <p><i></i><span>5.7</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/q4.jpg"></a></p>
+                        <p>4.<a href="#">平庸之上</a></p>
+                        <p><a href="#">9m88</a></p>
+                        <p><i></i><span>5.7</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/q5.jpg"></a></p>
+                        <p>5.<a href="#">Lover</a></p>
+                        <p><a href="#">Taylor Swift</a></p>
+                        <p><i></i><span>5.7</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/q6.jpg"></a></p>
+                        <p>6.<a href="#">i,i</a></p>
+                        <p><a href="#">Bon Iver</a></p>
+                        <p><i></i><span>5.7</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/q7.jpg"></a></p>
+                        <p>7.<a href="#">‘The ReVe Festival’ Day 2</a></p>
+                        <p><a href="#">레드벨벳 Red Velvet</a></p>
+                        <p><i></i><span>5.7</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/q8.jpg"></a></p>
+                        <p>8.<a href="#">IT'z ICY</a></p>
+                        <p><a href="#">ITZY</a></p>
+                        <p><i></i><span>5.7</span></p>
+                    </div>
+                    <p class="title title2">热门歌单 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing paragraphing2">
+                        <p><a href="#"><img src="images/w1.jpg"></a></p>
+                        <p>当我下厨时我在听什么</p>
+                        <a href="#"><i><img src="images/bf.png"></i></a>
+                    </div>
+                    <div class="paragraphing paragraphing2">
+                        <p><a href="#"><img src="images/w2.jpg"></a></p>
+                        <p>《大小谎言》里会让你点开听</p>
+                        <a href="#"><i><img src="images/bf.png"></i></a>
+                    </div>
+                    <div class="paragraphing paragraphing2">
+                        <p><a href="#"><img src="images/w3.jpg"></a></p>
+                        <p>与清晨聊天，与朝阳唠嗑</p>
+                        <a href="#"><i><img src="images/bf.png"></i></a>
+                    </div>
+                    <div class="paragraphing paragraphing2">
+                        <p><a href="#"><img src="images/w4.jpg"></a></p>
+                        <p>去看现场还带耳机的人在听的音乐</p>
+                        <a href="#"><i><img src="images/bf.png"></i></a>
+                    </div>
+                    <div class="paragraphing paragraphing2">
+                        <p><a href="#"><img src="images/w5.jpg"></a></p>
+                        <p>所有的好事情都发生在夏天</p>
+                        <a href="#"><i><img src="images/bf.png"></i></a>
+                    </div>
+                    <div class="paragraphing paragraphing2">
+                        <p><a href="#"><img src="images/w6.jpg"></a></p>
+                        <p>我们</p>
+                        <a href="#"><i><img src="images/bf.png"></i></a>
+                    </div>
+                </div>
+                <aside class="music-right">
+                    <p class="title">本周流行音乐人 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing clearfix">
+                        <p class="num">1.</p>
+                        <div class="music-right-img">
+                            <a href="#"><img src="images/e1.jpg"></a>
+                            <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                        </div>
+                        <div class="music-right-txt">
+                            <p><a href="#">天鹅与花朵</a></p>
+                            <p>流派: 民谣 Folk</p>
+                            <p>383人关注</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing clearfix">
+                        <p class="num">2.</p>
+                        <div class="music-right-img">
+                            <a href="#"><img src="images/e2.jpg"></a>
+                            <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                        </div>
+                        <div class="music-right-txt">
+                            <p><a href="#">Hiperson/海朋森</a></p>
+                            <p>流派: 摇滚 Rock </p>
+                            <p>2078人关注</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing clearfix">
+                        <p class="num">3.</p>
+                        <div class="music-right-img">
+                            <a href="#"><img src="images/e3.jpg"></a>
+                            <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                        </div>
+                        <div class="music-right-txt">
+                            <p><a href="#">Uncle Hu</a></p>
+                            <p>流派: 摇滚 Rock</p>
+                            <p>998人关注</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing clearfix">
+                        <p class="num">4.</p>
+                        <div class="music-right-img">
+                            <a href="#"><img src="images/e4.jpg"></a>
+                            <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                        </div>
+                        <div class="music-right-txt">
+                            <p><a href="#">赵乞</a></p>
+                            <p>流派: 民谣 Folk</p>
+                            <p>99人关注</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing clearfix">
+                        <p class="num">5.</p>
+                        <div class="music-right-img">
+                            <a href="#"><img src="images/e5.jpg"></a>
+                            <a href="#"><i class="iconfont icon-arrow-"></i></a>
+                        </div>
+                        <div class="music-right-txt">
+                            <p><a href="#">不在话下</a></p>
+                            <p>流派: 摇滚 Rock</p>
+                            <p>222人关注</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!-- 音乐结束 -->
+
+        <!-- 豆品开始 -->
+        <div id="doupin" class="clearfix">
+            <div class="container clearfix">
+                <aside class="doupin-left">
+                    <p><a href="#">豆品</a></p>
+                </aside>
+                <div class="doupin-main clearfix">
+                    <p class="title">新书速递 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing paragraphing-right">
+                        <p><a href="#"><img src="images/x1.jpg"></a></p>
+                        <p><a href="#" class="left"><span>豆瓣冻顶乌龙茶</span></a><span class="right">￥59.00</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/x2.jpg"></a></p>
+                        <p><a href="#" class="left"><span>豆瓣软面笔记本</span></a><span class="right">￥39.00</span></p>
+                    </div>
+                    <div class="paragraphing paragraphing-right">
+                        <p><a href="#"><img src="images/x3.jpg"></a></p>
+                        <p><a href="#" class="left"><span>豆瓣收藏夹</span></a><span class="right">￥99.00</span></p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#"><img src="images/x4.jpg"></a></p>
+                        <p><a href="#" class="left"><span>豆瓣经典帆布包</span></a><span class="right">￥149.00</span></p>
+                    </div>
+                </div>
+                <aside class="doupin-right">
+                    <p class="title">热门活动 · · · · · ·</p>
+                    <p><a href="#"><img src="images/m.jpg"></a></p>
+                    <p><a href="#">我的豆瓣收藏夹里有什么</a></p>
+                    <p class="title">官方小组 · · · · · · ( <a href="#">更多</a> )</p>
+                </aside>
+            </div>
+
+        </div>
+        <!-- 豆品结束 -->
+
+        <!-- 同城开始 -->
+        <div id="city-wide" class="clearfix">
+            <div class="container clearfix">
+                <aside class="city-wide-left">
+                    <p><a href="#">同城</a></p>
+                    <p><a href="#">近期活动</a></p>
+                    <p><a href="#">主办方</a></p>
+                    <p><a href="#">舞台剧</a></p>
+                </aside>
+                <div class="city-wide-main clearfix">
+                    <p class="title">温州 · 本周热门活动 · · · · · · ( <a href="#">更多</a> )</p>
+                    <div class="paragraphing paragraphing-right">
+                        <p class="city-wide-main-img"><a href="#"><img src="images/p1.jpg"></a></p>
+                        <div class="txt">
+                            <p><a href="#">2019小野丽莎歌手之旅亚洲巡回演唱会温州站</a></p>
+                            <p>1月11日 周五 19:30 - 21:30</p>
+                            <p>温州体育中心体育馆</p>
+                            <p>22人关注</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <p class="city-wide-main-img"><a href="#"><img src="images/p2.jpg"></a></p>
+                        <div class="txt">
+                            <p><a href="#">“天空之城”久石让&宫崎骏经典动漫作品视听音乐会</a></p>
+                            <p>12月22日 周六 19:30 - 21:30</p>
+                            <p>温州东南剧院 浙江省温州市</p>
+                            <p>14人关注</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing paragraphing-right">
+                        <p class="city-wide-main-img"><a href="#"><img src="images/p3.jpg"></a></p>
+                        <div class="txt">
+                            <p><a href="#">乌克兰国家交响乐团2019温州新年音乐会</a></p>
+                            <p>12月27日 周四 19:30 - 21:30</p>
+                            <p>温州东南剧院 浙江省温州市</p>
+                            <p>5人关注</p>
+                        </div>
+                    </div>
+                    <div class="paragraphing">
+                        <p class="city-wide-main-img"><a href="#"><img src="images/p4.jpg"></a></p>
+                        <div class="txt">
+                            <p><a href="#">匈牙利吉普赛交响乐团音乐会--温州站</a></p>
+                            <p>1月10日 周四 19:30 - 21:30</p>
+                            <p>温州大剧院 浙江省温州市鹿</p>
+                            <p>0人关注</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="city-wide-right">
+                    <p class="title">影片分类 · · · · · ·</p>
+                    <div class="paragraphing">
+                        <p><a href="#">音乐»</a></p>
+                        <p>
+                            <a href="#">小型现场</a>
+                            <a href="#">音乐会</a>
+                            <a href="#">演唱会</a>
+                            <a href="#">音乐节</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">戏剧»</a></p>
+                        <p>
+                            <a href="#">话剧</a>
+                            <a href="#">音乐剧</a>
+                            <a href="#">舞剧</a>
+                            <a href="#">歌剧</a>
+                            <a href="#">戏曲</a>
+                            <a href="#">其他</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">聚会»</a></p>
+                        <p>
+                            <a href="#">生活</a>
+                            <a href="#">集市</a>
+                            <a href="#">摄影</a>
+                            <a href="#">外语</a>
+                            <a href="#">桌游</a>
+                            <a href="#">夜店</a>
+                            <a href="#">交友</a>
+                            <a href="#">美食</a>
+                            <a href="#">派对</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">电影»</a></p>
+                        <p>
+                            <a href="#">主题放映</a>
+                            <a href="#">影展</a>
+                            <a href="#">影院活动</a>
+                        </p>
+                    </div>
+                    <div class="paragraphing">
+                        <p><a href="#">其他»</a></p>
+                        <p>
+                            <a href="#">讲座</a>
+                            <a href="#">展览</a>
+                            <a href="#">运动</a>
+                            <a href="#">旅行</a>
+                            <a href="#">公益</a>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!-- 同城结束 -->
+
+        <!-- 结尾撒花开始 -->
+        <footer id="last">
+            <div class="last-left">
+                <p>© 2005－2019 douban.com, all rights reserved 北京豆网科技有限公司</p>
+                <p><a href="#">京ICP证090015号</a> 京ICP备11027288号 网络视听许可证<a href="#">0110418</a>号</p>
+                <p>京网文[2015]2026-368号 <i class="icon1"><img src="images/last_icon1.gif"></i><a href="#"> 京公网安备11010502000728</a> 新出网证(京)字129号</p>
+                <p>违法和不良信息举报电话：4008353331-9<span class="E-mail">jubao@douban.com</span></p>
+                <p><i class="icon2"><img src="images/last_icon2.gif"></i><a href="#"> 中国互联网举报中心 </a>电话：12377 <a href="#">新出发京批字第直160029号</a></p>
+            </div>
+            <div class="last-right">
+                <p><a href="#">关于豆瓣</a> · <a href="#">在豆瓣工作</a> · <a href="#">联系我们</a> · <a href="#">法律声明</a> · <a href="#">帮助中心</a> · <a href="#">移动应用</a> · <a href="#">豆瓣广告</a></p>
+                <p><a href="#"><img src="images/last.jpg"></a></p>
+            </div>
+        </footer>
+        <!-- 结尾撒花结束 -->
+    </div>
+</body>
+
+</html>
